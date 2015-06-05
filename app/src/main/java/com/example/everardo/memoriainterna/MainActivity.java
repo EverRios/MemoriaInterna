@@ -17,7 +17,7 @@ import java.io.OutputStreamWriter;
 
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
-
+    /// Se decalran todas las variables
     private EditText txtTexto;
     private Button btnGuardar, btnAbrir;
     private static final int READ_BLOCK_SIZE=100;
@@ -26,7 +26,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+/// se lanzan todos los EditText Y Botones
         txtTexto = (EditText) findViewById(R.id.txtArchivo);
         btnGuardar = (Button)findViewById(R.id.btnGuardar);
         btnAbrir = (Button)findViewById(R.id.btnAbrir);
@@ -108,7 +108,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                     inputBuffer = new char[READ_BLOCK_SIZE];
                 }
 
-                //Se muestra el texto leido en la caje de texto
+                //Se muestra el texto leido en la caja de texto
                 txtTexto.setText(str);
 
                 isr.close();
